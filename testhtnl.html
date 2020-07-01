@@ -1,0 +1,55 @@
+<header>
+    <link rel="stylesheet"  type="text/css" href="https://googledrive.com/host/19-9rcSE_B0WuPoXT2Gd4LWiE6yo50FLy"/>
+</header>
+
+
+<h2>Question : WebBrowser in Java app</h2>
+<div style=" font-size: 18px ">
+    <p>I am trying to embed A functional web browser in my java app.</p>
+
+    <p>I tried [jBrowser]<sup>1</sup> but first it is for 32 bits platform and when I try in 32 bits it don't work,
+        shows this message:</p>
+
+    <p><code>"java.lang.UnsatisfiedLinkError: D:\xulrunner\xulrunner\xulrunner\javaxpcomglue.dll: Can't find dependent libraries"</code>
+    </p>
+
+    <p>I tried using <code>setXulRunnerPath(new File("d://xulrunner"))</code> with latest. I tried with previous version
+        and dont work anyway, but instead I found this [advice]<sup>2</sup>. I saw the swt browser works but I need my
+        application in swing.</p>
+
+    <p>My question: Is there is some component to acomplish this? Thank you in advance for any help.</p>
+
+    <p><sup>1</sup>: <a href="https://code.google.com/p/jbrowser/"
+            rel="nofollow">https://code.google.com/p/jbrowser/</a><br>
+        <sup>2</sup>: <a
+            href="https://developer.mozilla.org/en-US/docs/JavaXPCOM/Embedding_Mozilla_in_a_Java_Application_using_JavaXPCOM"
+            rel="nofollow">https://developer.mozilla.org/en-US/docs/JavaXPCOM/Embedding_Mozilla_in_a_Java_Application_using_JavaXPCOM</a>
+    </p>
+</div>
+<hr>
+<div style=" margin-right: 5%; margin-left: 5%; font-size: 14px; "><B>comment #</B>1Would <code>Desktop#browse()</code>
+    be an alternative?
+    <hr style="color: #DCDCDC; background-color: #DCDCDC;">
+</div>
+<div style=" margin-right: 5%; margin-left: 5%; font-size: 14px; "><B>comment #</B>2You could try Webkit-based WebView
+    which is built-in into JDK 7+.
+    <hr style="color: #DCDCDC; background-color: #DCDCDC;">
+</div>
+<div style=" margin-right: 5%; margin-left: 5%; font-size: 14px; "><B>comment #</B>3If you are using 32 bit native code,
+    you need to be running within a 32 bit version of Java
+    <hr style="color: #DCDCDC; background-color: #DCDCDC;">
+</div>
+<div style="background-color: #C2E4F2;">
+    <h3 style="color: #005C84;">David<br><img src="https://www.img.in.th/images/f11865103ab590aff5efd38cbb5f4dbd.png"
+            title="User Image" width="100" height="100"></h3>
+    <hr style="color: white; background-color: white; box-shadow: 0px 5px 5px black;">
+</div>
+<h2>Answer #1</h2>
+<div style=" font-size: 16px ">
+    <p>Somebody else has asked this question on here for embedding a web browser into a java application so an answer
+        their may help.</p>
+
+    <p><a href="https://stackoverflow.com/questions/48249/is-there-a-way-to-embed-a-browser-in-java">Is there a way to
+            embed a browser in Java?</a></p>
+</div>
+<hr>
